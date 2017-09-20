@@ -1,0 +1,113 @@
+{
+    "settings": {
+      "index": {
+        "number_of_shards": "1",
+        "number_of_replicas": "1"
+      }
+    },
+    "mappings": {
+      "billede": {
+        "properties": {
+          "arkiv_kort_id": {
+            "type": "integer",
+            "store": true
+          },
+          "mediagruppe_enhets_id": {
+            "type": "integer"
+          },
+          "tilvekstnr": {
+            "type": "keyword",
+            "store": true
+          },
+          "foto_mediagruppe": {
+            "type": "integer"
+          },
+          "gjenstand": {
+            "type": "keyword",
+            "store": true
+          },
+          "spes_betegnelse": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "type_funksjon": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "datering": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "brukssted": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "prodsted": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "navn": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "materiale": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "teknikk": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "form_stil": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "farge": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "dekor_teknikk": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "dekor_motiv": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "innskr": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "stempel_sign": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "mÅl_vekt": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "tilstand": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "gjenstand_orig": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "spes_betegnelse_orig": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "type_funksjon_orig": {
+            "type": "text",
+            "analyzer": "norwegian"
+          },
+          "alle_data":{
+            "type":"text",
+            "fielddata": true,          
+            "analyzer":"standard"
+          }
+        }
+      }
+    }
+  }
